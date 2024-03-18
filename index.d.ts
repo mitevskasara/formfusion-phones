@@ -161,7 +161,7 @@ declare module "@formfusion/phones" {
     [K in keyof T as K extends string ? Lowercase<K> : never]: T[K];
   };
 
-  type phones = LowercaseKeys<Phones>;
+  const phones: LowercaseKeys<Phones>;
 
   export = phones;
 }
