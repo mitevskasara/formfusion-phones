@@ -1,6 +1,6 @@
 # @formfusion/phones
 
-Set of validation rules for worldwide phone numbers, used for the [FormFusion](https://www.corelabui.com/formfusion) (form management & validation) library.
+Set of validation rules for worldwide phone numbers.
 
 A zero-dependency lookup table of **155 country-specific regex patterns** for validating phone numbers. Every value is a regex **string** (no `null`s, no empty placeholders) and works directly as an HTML [`pattern`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) attribute value, so you can use it with plain HTML, React, FormFusion, or `new RegExp()`.
 
