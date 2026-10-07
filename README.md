@@ -170,18 +170,6 @@ npm run build
 
 The source currently contains a commented-out duplicate `IR` entry (an older pattern variant) next to the live one; the built `index.js` has 155 unique keys with `ir` appearing exactly once.
 
-This repo has no tests and no CI. If you add a pattern, add a corresponding test in the [FormFusion](https://github.com/corelabui/formfusion) repo, which covers the sibling packages with one Jest + React Testing Library file per country.
-
-### Scripts
-
-| Script | Description |
-| --- | --- |
-| `npm run build` | Clean stale build output, then bundle `src/index.js` into `index.js` via esbuild |
-| `npm version <patch\|minor\|major>` | Bump the version and regenerate `CHANGELOG.md` from Conventional Commits (runs `npm run version` automatically) |
-| `npm run publish-package` | `npm publish --access public` |
-
-The `version` script shells out to `conventional-changelog`, which is not declared in `devDependencies`. Install it globally or add it as a dev dependency before running a version bump.
-
 ### Commit convention
 
 This repo follows [Conventional Commits](https://www.conventionalcommits.org/), and `CHANGELOG.md` is generated from those subjects:
